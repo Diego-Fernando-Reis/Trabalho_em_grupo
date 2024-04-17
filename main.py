@@ -14,7 +14,32 @@ class Pesquisa:
         lista.append([self.data_hora, self.idade, self.genero, self.resposta_1, self.resposta_2,self.resposta_3,self.resposta_4])
        
     
+def importar_csv_para_lista(nome_arquivo):
+    dados_lista = []
+    with open(nome_arquivo, 'r') as arquivo_csv:
+        leitor_csv = csv.reader(arquivo_csv)
+        for linha in leitor_csv:
+            dados_lista.append(linha)
+    return dados_lista
 
+# Substitua 'arquivo.csv' pelo caminho do seu arquivo CSV
+nome_arquivo = 'dados2.csv'
+dados = importar_csv_para_lista(nome_arquivo)
+print(dados)
+
+i=0
+while(i<len(dados)):
+    with open('dados.csv', mode='a', newline='') as arquivo_csv:
+        cabecalhos = ['idade', 'genero', 'pergunta1', 'pergunta2', 'pergunta3', 'pergunta4', 'pergunta5', 'pergunta6', 'data_hora']
+        escritor_csv = csv.writer(arquivo_csv, delimiter=';')
+
+        if arquivo_csv.tell() == 0:
+                escritor_csv.writerow(cabecalhos)
+
+        #escreve na linha
+        escritor_csv.writerow(dados[i])
+        print(dados[i])
+    i = i+1
 
 def menu():
     idade=''
