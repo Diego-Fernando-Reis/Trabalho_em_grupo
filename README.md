@@ -27,20 +27,21 @@ Desenvolver um projeto capaz de armazenar dados recolhidos em uma pesquisa em um
 O projeto pode ser executado online acessando o link [GitHub do Projeto](https://github.com/Diego-Fernando-Reis/Trabalho_em_grupo).
 
 ### Localmente
-1. Baixe o Python na sua máquina e instale a extensão.
-2. Faça o download do projeto clicando em "Code" e em seguida "Download ZIP" no [GitHub do Projeto](https://github.com/Diego-Fernando-Reis/Trabalho_em_grupo).
-3. Extraia o arquivo ZIP em uma pasta de sua preferência.
-4. Abra o terminal e navegue até o diretório onde você extraiu os arquivos.
-5. Abra o arquivo "Main.py"
-6. Execute os seguintes comandos:
+1. Baixe o Python na sua máquina.
+2. Baixe o Visual Studio Code e instale a extensão "Pylance" e "Python".
+3. Faça o download do projeto clicando em "Code" e em seguida "Download ZIP" no [GitHub do Projeto](https://github.com/Diego-Fernando-Reis/Trabalho_em_grupo).
+4. Extraia o arquivo ZIP em uma pasta de sua preferência.
+5. Abra o terminal e navegue até o diretório onde você extraiu os arquivos.
+6. Abra o arquivo "Main.py"
+7. Execute os seguintes comandos:
 
 npm install
 
-7. O servidor local será iniciado e você poderá acessar o projeto pelo navegador.
+8. O servidor local será iniciado e você poderá acessar o projeto pelo navegador.
 
 pip install matplotlib
 
-8. Executando o comando, será visualizado o gráfico em Python.
+9. Executando o comando, será visualizado o gráfico em Python.
 
 ## Introdução ao Projeto
 
